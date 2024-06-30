@@ -1,8 +1,4 @@
 import * as ExpoEditorMediaPicker from 'expo-editor-media-picker';
-import {
-  ExpoEditorMediaPickerAppearance,
-  ExpoEditorMediaPickerSelectMode
-} from "expo-editor-media-picker/ExpoEditorMediaPicker.types";
 import {Button, StyleSheet,  View} from 'react-native';
 
 export default function App() {
@@ -10,10 +6,6 @@ export default function App() {
     try {
     const result = await ExpoEditorMediaPicker.launchPickerAsync({
       maximumSelectedCount: 1,
-      languageType: 'arabic',
-      appearanceStyle: ExpoEditorMediaPickerAppearance.dark,
-      selectMode: ExpoEditorMediaPickerSelectMode.single,
-      selectionTapAction:'openEditor'
     });
       console.log(result);
     }
