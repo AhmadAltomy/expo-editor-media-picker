@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-editor-media-picker": ["../src/index"],
+      "expo-editor-media-picker/*": ["../src/*"]
+    }
+  }
+}
