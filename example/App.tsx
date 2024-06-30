@@ -1,11 +1,29 @@
-import { StyleSheet, Text, View } from 'react-native';
-
 import * as ExpoEditorMediaPicker from 'expo-editor-media-picker';
+import {
+  ExpoEditorMediaPickerAppearance,
+  ExpoEditorMediaPickerSelectMode
+} from "expo-editor-media-picker/ExpoEditorMediaPicker.types";
+import {Button, StyleSheet, Text, View} from 'react-native';
 
 export default function App() {
+  const openPicker = async () => {
+    try {
+    const result = await ExpoEditorMediaPicker.launchPickerAsync({
+      maximumSelectedCount: 1,
+      languageType: 'arabic',
+      appearanceStyle: ExpoEditorMediaPickerAppearance.dark,
+      selectMode: ExpoEditorMediaPickerSelectMode.single,
+      selectionTapAction:'openEditor'
+    });
+      console.log(result);
+    }
+    catch (e) {
+      console.log(e);
+    }
+  }
   return (
     <View style={styles.container}>
-      <Text>{ExpoEditorMediaPicker.hello()}</Text>
+      <Button title={'Open Picker'} onPress={openPicker} />
     </View>
   );
 }
