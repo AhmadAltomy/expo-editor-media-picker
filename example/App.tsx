@@ -3,7 +3,7 @@ import {
   ExpoEditorMediaPickerAppearance,
   ExpoEditorMediaPickerSelectMode
 } from "expo-editor-media-picker/ExpoEditorMediaPicker.types";
-import {Button, StyleSheet, Text, View} from 'react-native';
+import {Button, StyleSheet,  View} from 'react-native';
 
 export default function App() {
   const openPicker = async () => {
