@@ -24,6 +24,11 @@ public class ExpoEditorMediaPickerModule: Module {
         config.photoSelectionTapAction = options.selectionTapAction.toHXPickerSelectionTapAction()
         config.videoSelectionTapAction = options.selectionTapAction.toHXPickerSelectionTapAction()
         config.modalPresentationStyle =  .fullScreen
+          
+          if options.selectOptions == .video {
+              config.editor.toolsView.toolOptions.remove(at: 2)
+              config.editor.toolsView.toolOptions.remove(at: 3)
+          }
 
 
 

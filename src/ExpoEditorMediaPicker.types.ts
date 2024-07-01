@@ -43,6 +43,9 @@ export enum ExpoEditorMediaPickerModelPresentationStyle {
     automatic = -2,
 }
 
+// cancelText
+export type ExpoEditorMediaPickerCancelText = string;
+
 // options
 export type ExpoEditorMediaPickerOptions = {
   maximumSelectedCount?: number;
@@ -52,5 +55,7 @@ export type ExpoEditorMediaPickerOptions = {
   selectMode?: ExpoEditorMediaPickerSelectMode;
   selectionTapAction?: ExpoEditorMediaPickerSelectionTapAction;
   modelPresentationStyle?: ExpoEditorMediaPickerModelPresentationStyle;
+  cancelText?: ExpoEditorMediaPickerCancelText;
 }
+
 

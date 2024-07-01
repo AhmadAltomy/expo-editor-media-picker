@@ -1,11 +1,13 @@
 import * as ExpoEditorMediaPicker from 'expo-editor-media-picker';
-import {Button, StyleSheet,  View} from 'react-native';
+import {ExpoEditorMediaPickerSelectOptions} from "expo-editor-media-picker/ExpoEditorMediaPicker.types";
+import {Button, StyleSheet, View} from 'react-native';
 
 export default function App() {
   const openPicker = async () => {
     try {
     const result = await ExpoEditorMediaPicker.launchPickerAsync({
       maximumSelectedCount: 1,
+      selectOptions:ExpoEditorMediaPickerSelectOptions.video
     });
       console.log(result);
     }
