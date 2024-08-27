@@ -24,15 +24,19 @@ public class ExpoEditorMediaPickerModule: Module {
         config.photoSelectionTapAction = options.selectionTapAction.toHXPickerSelectionTapAction()
         config.videoSelectionTapAction = options.selectionTapAction.toHXPickerSelectionTapAction()
         config.modalPresentationStyle =  .fullScreen
+    
           
-          if options.selectOptions == .video {
-              config.editor.toolsView.toolOptions.remove(at: 2)
-              config.editor.toolsView.toolOptions.remove(at: 3)
-          }
+          
+        if options.selectOptions == .video {
+    
+            config.editor.toolsView.toolOptions.remove(at: 2)
+            config.editor.toolsView.toolOptions.remove(at: 3)
+
+        }
 
 
 
-        let urls: [URL] = try await Photo.picker(config)
+          let urls: [URL] = try await Photo.picker(config)
 
         // Convert URLs to strings.
         let urlsString = urls.map { $0.absoluteString }

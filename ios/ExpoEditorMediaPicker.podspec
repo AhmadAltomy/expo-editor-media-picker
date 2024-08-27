@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.dependency 'ExpoModulesCore'
-  # Add HXPhotoPicker dependency
-  s.dependency 'HXPhotoPicker'
+  # Add HXPhotoPicker dependency version 4.2.2
+  s.dependency 'HXPhotoPicker', '~> 4.2.2'
 
   # Swift/Objective-C compatibility
   s.pod_target_xcconfig = {
