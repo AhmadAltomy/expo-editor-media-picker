@@ -7,9 +7,9 @@ PODS:
     - ExpoModulesCore
   - ExpoAsset (10.0.10):
     - ExpoModulesCore
-  - ExpoEditorMediaPicker (0.1.0):
+  - ExpoEditorMediaPicker (0.1.3):
     - ExpoModulesCore
-    - HXPhotoPicker
+    - HXPhotoPicker (~> 4.2.3.2)
   - ExpoFileSystem (17.0.1):
     - ExpoModulesCore
   - ExpoFont (12.0.7):
@@ -45,44 +45,44 @@ PODS:
   - hermes-engine (0.74.2):
     - hermes-engine/Pre-built (= 0.74.2)
   - hermes-engine/Pre-built (0.74.2)
-  - HXPhotoPicker (4.2.1):
-    - HXPhotoPicker/Full (= 4.2.1)
-  - HXPhotoPicker/Camera (4.2.1):
-    - HXPhotoPicker/Camera/Lite (= 4.2.1)
-    - HXPhotoPicker/Camera/Location (= 4.2.1)
-  - HXPhotoPicker/Camera/Lite (4.2.1):
+  - HXPhotoPicker (4.2.3.2):
+    - HXPhotoPicker/Full (= 4.2.3.2)
+  - HXPhotoPicker/Camera (4.2.3.2):
+    - HXPhotoPicker/Camera/Lite (= 4.2.3.2)
+    - HXPhotoPicker/Camera/Location (= 4.2.3.2)
+  - HXPhotoPicker/Camera/Lite (4.2.3.2):
     - HXPhotoPicker/Core
-  - HXPhotoPicker/Camera/Location (4.2.1):
+  - HXPhotoPicker/Camera/Location (4.2.3.2):
     - HXPhotoPicker/Camera/Lite
-  - HXPhotoPicker/Core (4.2.1):
+  - HXPhotoPicker/Core (4.2.3.2):
     - HXPhotoPicker/Resources
-  - HXPhotoPicker/Editor (4.2.1):
-    - HXPhotoPicker/Editor/KF (= 4.2.1)
-    - HXPhotoPicker/Editor/Lite (= 4.2.1)
-  - HXPhotoPicker/Editor/KF (4.2.1):
+  - HXPhotoPicker/Editor (4.2.3.2):
+    - HXPhotoPicker/Editor/KF (= 4.2.3.2)
+    - HXPhotoPicker/Editor/Lite (= 4.2.3.2)
+  - HXPhotoPicker/Editor/KF (4.2.3.2):
     - HXPhotoPicker/Editor/Lite
     - HXPhotoPicker/EditorView/KF
     - Kingfisher (~> 7.0)
-  - HXPhotoPicker/Editor/Lite (4.2.1):
+  - HXPhotoPicker/Editor/Lite (4.2.3.2):
     - HXPhotoPicker/EditorView/Lite
-  - HXPhotoPicker/EditorView/KF (4.2.1):
+  - HXPhotoPicker/EditorView/KF (4.2.3.2):
     - HXPhotoPicker/EditorView/Lite
     - Kingfisher (~> 7.0)
-  - HXPhotoPicker/EditorView/Lite (4.2.1):
+  - HXPhotoPicker/EditorView/Lite (4.2.3.2):
     - HXPhotoPicker/Core
-  - HXPhotoPicker/Full (4.2.1):
+  - HXPhotoPicker/Full (4.2.3.2):
     - HXPhotoPicker/Camera
     - HXPhotoPicker/Editor
     - HXPhotoPicker/Picker
-  - HXPhotoPicker/Picker (4.2.1):
-    - HXPhotoPicker/Picker/KF (= 4.2.1)
-    - HXPhotoPicker/Picker/Lite (= 4.2.1)
-  - HXPhotoPicker/Picker/KF (4.2.1):
+  - HXPhotoPicker/Picker (4.2.3.2):
+    - HXPhotoPicker/Picker/KF (= 4.2.3.2)
+    - HXPhotoPicker/Picker/Lite (= 4.2.3.2)
+  - HXPhotoPicker/Picker/KF (4.2.3.2):
     - HXPhotoPicker/Picker/Lite
     - Kingfisher (~> 7.0)
-  - HXPhotoPicker/Picker/Lite (4.2.1):
+  - HXPhotoPicker/Picker/Lite (4.2.3.2):
     - HXPhotoPicker/Core
-  - HXPhotoPicker/Resources (4.2.1)
+  - HXPhotoPicker/Resources (4.2.3.2)
   - Kingfisher (7.12.0)
   - RCT-Folly (2024.01.01.00):
     - boost
@@ -1449,7 +1449,7 @@ SPEC CHECKSUMS:
   EXConstants: 409690fbfd5afea964e5e9d6c4eb2c2b59222c59
   Expo: 675a5642b5860771507237259da50b921c03a9f3
   ExpoAsset: 323700f291684f110fb55f0d4022a3362ea9f875
-  ExpoEditorMediaPicker: 12d94e0793b13d90c89d3d61be552e63434923e9
+  ExpoEditorMediaPicker: a2719e74780fb4697416254fa70e27128d32ba97
   ExpoFileSystem: 80bfe850b1f9922c16905822ecbf97acd711dc51
   ExpoFont: 43b69559cef3d773db57c7ae7edd3cb0aa0dc610
   ExpoKeepAwake: 3b8815d9dd1d419ee474df004021c69fdd316d08
@@ -1458,7 +1458,7 @@ SPEC CHECKSUMS:
   fmt: 4c2741a687cc09f0634a2e2c72a838b99f1ff120
   glog: fdfdfe5479092de0c4bdbebedd9056951f092c4f
   hermes-engine: 01d3e052018c2a13937aca1860fbedbccd4a41b7
-  HXPhotoPicker: e1835b71c58b48058955ea15eb557f1e26e8b784
+  HXPhotoPicker: 7ab106262ed00dc324827675a3da275d12eb3251
   Kingfisher: 53a10ea35051a436b5fb626ca2dd8f3144d755e9
   RCT-Folly: 02617c592a293bd6d418e0a88ff4ee1f88329b47
   RCTDeprecation: b03c35057846b685b3ccadc9bfe43e349989cdb2
